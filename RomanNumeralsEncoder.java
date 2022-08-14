@@ -169,7 +169,7 @@ public class RomanNumeralsEncoder {
         if (number == key.intValue()) // Fits perfectly
         return ROMAN_NUMBERS_MAP.get(number);
         
-        return ROMAN_NUMBERS_MAP.get(key) + solution(number - key); // Add rest recursively
+        return ROMAN_NUMBERS_MAP.get(key) + solutionTreeMap(number - key); // Add rest recursively
     }
 
   
